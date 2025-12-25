@@ -1,0 +1,15 @@
+export const DB_NAME = "InterWeU"
+
+export const APPLICATION_STATES = {
+    CREATED: 'CREATED',
+    ELIGIBLE: 'ELIGIBLE',
+    APPLIED: 'APPLIED',
+    REJECTED: 'REJECTED'
+}
+
+export const STATE_TRANSITIONS = {
+    CREATED: ['ELIGIBLE', 'REJECTED'],
+    ELIGIBLE: ['APPLIED', 'REJECTED'],
+    APPLIED: [],
+    REJECTED: []
+}
